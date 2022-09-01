@@ -11,6 +11,12 @@
 		5A1F6D8728C0F7AB0052B569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8628C0F7AB0052B569 /* ContentView.swift */; };
 		5A1F6D8928C0F7AD0052B569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8828C0F7AD0052B569 /* Assets.xcassets */; };
 		5A1F6D8C28C0F7AD0052B569 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8B28C0F7AD0052B569 /* Preview Assets.xcassets */; };
+		5A1F6D9328C0F7FA0052B569 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9228C0F7FA0052B569 /* default.json */; };
+		5A1F6D9628C0F84D0052B569 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9528C0F84D0052B569 /* DataModel.swift */; };
+		5A1F6D9928C0F8930052B569 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9828C0F8930052B569 /* Persistence.swift */; };
+		5A1F6D9B28C0F8D90052B569 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9A28C0F8D90052B569 /* Trip.swift */; };
+		5A1F6D9D28C0F8F20052B569 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9C28C0F8F20052B569 /* Waypoint.swift */; };
+		5A1F6D9F28C0FCE10052B569 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D9E28C0FCE10052B569 /* MapDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		5A1F6D8628C0F7AB0052B569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A1F6D8828C0F7AD0052B569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1F6D8B28C0F7AD0052B569 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A1F6D9228C0F7FA0052B569 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		5A1F6D9528C0F84D0052B569 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5A1F6D9828C0F8930052B569 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5A1F6D9A28C0F8D90052B569 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		5A1F6D9C28C0F8F20052B569 /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		5A1F6D9E28C0FCE10052B569 /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		5A1F6D8328C0F7AB0052B569 /* Viper SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F6D9728C0F8850052B569 /* Data Sources */,
+				5A1F6D9428C0F83F0052B569 /* Entities */,
 				5A1F6D8428C0F7AB0052B569 /* Viper_SwiftUIApp.swift */,
 				5A1F6D8628C0F7AB0052B569 /* ContentView.swift */,
+				5A1F6D9228C0F7FA0052B569 /* default.json */,
 				5A1F6D8828C0F7AD0052B569 /* Assets.xcassets */,
 				5A1F6D8A28C0F7AD0052B569 /* Preview Content */,
 			);
@@ -65,6 +80,25 @@
 				5A1F6D8B28C0F7AD0052B569 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A1F6D9428C0F83F0052B569 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F6D9528C0F84D0052B569 /* DataModel.swift */,
+				5A1F6D9A28C0F8D90052B569 /* Trip.swift */,
+				5A1F6D9C28C0F8F20052B569 /* Waypoint.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5A1F6D9728C0F8850052B569 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F6D9828C0F8930052B569 /* Persistence.swift */,
+				5A1F6D9E28C0FCE10052B569 /* MapDataProvider.swift */,
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F6D9328C0F7FA0052B569 /* default.json in Resources */,
 				5A1F6D8C28C0F7AD0052B569 /* Preview Assets.xcassets in Resources */,
 				5A1F6D8928C0F7AD0052B569 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F6D9B28C0F8D90052B569 /* Trip.swift in Sources */,
 				5A1F6D8728C0F7AB0052B569 /* ContentView.swift in Sources */,
+				5A1F6D9F28C0FCE10052B569 /* MapDataProvider.swift in Sources */,
+				5A1F6D9D28C0F8F20052B569 /* Waypoint.swift in Sources */,
+				5A1F6D9928C0F8930052B569 /* Persistence.swift in Sources */,
 				5A1F6D8528C0F7AB0052B569 /* Viper_SwiftUIApp.swift in Sources */,
+				5A1F6D9628C0F84D0052B569 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
