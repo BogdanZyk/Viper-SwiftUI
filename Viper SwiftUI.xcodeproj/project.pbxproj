@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A160A8F28C103D5001EA60B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A160A8E28C103D5001EA60B /* MapView.swift */; };
+		5A160A9128C1052E001EA60B /* TripListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A160A9028C1052E001EA60B /* TripListCell.swift */; };
+		5A160A9528C1084B001EA60B /* TripListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A160A9428C1084B001EA60B /* TripListInteractor.swift */; };
+		5A160A9728C10878001EA60B /* TripListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A160A9628C10878001EA60B /* TripListPresenter.swift */; };
+		5A160A9928C10A04001EA60B /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A160A9828C10A04001EA60B /* TripListView.swift */; };
 		5A1F6D8528C0F7AB0052B569 /* Viper_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8428C0F7AB0052B569 /* Viper_SwiftUIApp.swift */; };
 		5A1F6D8728C0F7AB0052B569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8628C0F7AB0052B569 /* ContentView.swift */; };
 		5A1F6D8928C0F7AD0052B569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F6D8828C0F7AD0052B569 /* Assets.xcassets */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A160A8E28C103D5001EA60B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5A160A9028C1052E001EA60B /* TripListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCell.swift; sourceTree = "<group>"; };
+		5A160A9428C1084B001EA60B /* TripListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListInteractor.swift; sourceTree = "<group>"; };
+		5A160A9628C10878001EA60B /* TripListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListPresenter.swift; sourceTree = "<group>"; };
+		5A160A9828C10A04001EA60B /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		5A1F6D8128C0F7AB0052B569 /* Viper SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1F6D8428C0F7AB0052B569 /* Viper_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_SwiftUIApp.swift; sourceTree = "<group>"; };
 		5A1F6D8628C0F7AB0052B569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,9 +58,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A160A9228C107E6001EA60B /* TripListModule */ = {
+			isa = PBXGroup;
+			children = (
+				5A160A9428C1084B001EA60B /* TripListInteractor.swift */,
+				5A160A9628C10878001EA60B /* TripListPresenter.swift */,
+				5A160A9828C10A04001EA60B /* TripListView.swift */,
+			);
+			path = TripListModule;
+			sourceTree = "<group>";
+		};
+		5A160A9328C10807001EA60B /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				5A160A9228C107E6001EA60B /* TripListModule */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
 		5A1F6D7828C0F7AB0052B569 = {
 			isa = PBXGroup;
 			children = (
+				5A1F6D8428C0F7AB0052B569 /* Viper_SwiftUIApp.swift */,
+				5A1F6D8628C0F7AB0052B569 /* ContentView.swift */,
 				5A1F6D8328C0F7AB0052B569 /* Viper SwiftUI */,
 				5A1F6D8228C0F7AB0052B569 /* Products */,
 			);
@@ -67,11 +97,10 @@
 		5A1F6D8328C0F7AB0052B569 /* Viper SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5A160A9328C10807001EA60B /* Moduls */,
 				5A1F6DA228C100520052B569 /* ViewComponents */,
 				5A1F6D9728C0F8850052B569 /* Data Sources */,
 				5A1F6D9428C0F83F0052B569 /* Entities */,
-				5A1F6D8428C0F7AB0052B569 /* Viper_SwiftUIApp.swift */,
-				5A1F6D8628C0F7AB0052B569 /* ContentView.swift */,
 				5A1F6D9228C0F7FA0052B569 /* default.json */,
 				5A1F6D8828C0F7AD0052B569 /* Assets.xcassets */,
 				5A1F6D8A28C0F7AD0052B569 /* Preview Content */,
@@ -111,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				5A1F6DA328C100670052B569 /* SplitImage.swift */,
+				5A160A8E28C103D5001EA60B /* MapView.swift */,
+				5A160A9028C1052E001EA60B /* TripListCell.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -186,13 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A160A9728C10878001EA60B /* TripListPresenter.swift in Sources */,
 				5A1F6D9B28C0F8D90052B569 /* Trip.swift in Sources */,
 				5A1F6D8728C0F7AB0052B569 /* ContentView.swift in Sources */,
+				5A160A9128C1052E001EA60B /* TripListCell.swift in Sources */,
 				5A1F6DA128C0FE000052B569 /* ImageDataService.swift in Sources */,
 				5A1F6D9F28C0FCE10052B569 /* MapDataService.swift in Sources */,
 				5A1F6D9D28C0F8F20052B569 /* Waypoint.swift in Sources */,
+				5A160A9928C10A04001EA60B /* TripListView.swift in Sources */,
 				5A1F6D9928C0F8930052B569 /* Persistence.swift in Sources */,
 				5A1F6DA428C100670052B569 /* SplitImage.swift in Sources */,
+				5A160A8F28C103D5001EA60B /* MapView.swift in Sources */,
+				5A160A9528C1084B001EA60B /* TripListInteractor.swift in Sources */,
 				5A1F6D8528C0F7AB0052B569 /* Viper_SwiftUIApp.swift in Sources */,
 				5A1F6D9628C0F84D0052B569 /* DataModel.swift in Sources */,
 			);

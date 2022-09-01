@@ -10,8 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var dataModel: DataModel
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 32) {
+                TripListView(presenter:
+                                TripListPresenter(interactor:
+                                                    TripListInteractor(model: dataModel)))
+            }
+        }
     }
 }
 
