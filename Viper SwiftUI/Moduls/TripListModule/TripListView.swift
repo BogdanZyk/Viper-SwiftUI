@@ -11,11 +11,15 @@ struct TripListView: View {
     @ObservedObject var presenter: TripListPresenter
     var body: some View {
         List {
-          ForEach (presenter.trips, id: \.id) { item in
-            TripListCell(trip: item)
-              .frame(height: 240)
-          }
-          .onDelete(perform: presenter.deleteTrip)
+            ForEach (presenter.trips, id: \.id) { item in
+                TripListCell(trip: item)
+                    .frame(height: 240)
+                    .background(
+                        presenter.linkBuilder(for: item)
+                    )
+                
+            }
+            .onDelete(perform: presenter.deleteTrip)
         }
         .listStyle(.plain)
         .navigationBarTitle("Roadtrips", displayMode: .inline)

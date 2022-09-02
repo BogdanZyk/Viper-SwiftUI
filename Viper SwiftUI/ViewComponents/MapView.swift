@@ -36,7 +36,7 @@ struct MapView: UIViewRepresentable {
     }
     if let routes = routes {
       routes.forEach { route in
-        view.addOverlay(route.polyline, level: .aboveRoads)
+          view.addOverlay(route.polyline, level: .aboveRoads)
       }
     }
   }
@@ -91,3 +91,8 @@ struct MapView_Previews: PreviewProvider {
   }
 }
 #endif
+
+
+//Map(coordinateRegion: .constant(MKCoordinateRegion(center: pins.first?.location ?? center, latitudinalMeters: 2000, longitudinalMeters: 2000)), annotationItems: pins, annotationContent: {
+//    MapMarker(coordinate: $0.location)
+//})

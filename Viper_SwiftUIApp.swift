@@ -10,13 +10,11 @@ import SwiftUI
 @main
 struct Viper_SwiftUIApp: App {
     @StateObject var model = DataModel()
-    init(){
-        model.load()
-    }
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(model)
+            
         }
     }
 }

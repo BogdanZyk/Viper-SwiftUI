@@ -16,6 +16,10 @@ final class DataModel {
 
   private var cancellables = Set<AnyCancellable>()
 
+    init(){
+        load()
+    }
+    
   func load() {
     persistence.load()
       .assign(to: \.trips, on: self)
