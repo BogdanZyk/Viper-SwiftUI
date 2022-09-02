@@ -30,6 +30,10 @@
 		5AC20F7E28C212F800534440 /* TripListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F7D28C212F800534440 /* TripListRouter.swift */; };
 		5AC20F8028C21AB200534440 /* TripMapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F7F28C21AB200534440 /* TripMapViewPresenter.swift */; };
 		5AC20F8228C21BFB00534440 /* TripMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F8128C21BFB00534440 /* TripMapView.swift */; };
+		5AC20F8428C2321900534440 /* TripDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F8328C2321900534440 /* TripDetailRouter.swift */; };
+		5AC20F8728C2328700534440 /* WaypointViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F8628C2328700534440 /* WaypointViewPresenter.swift */; };
+		5AC20F8928C232A900534440 /* WaypointViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F8828C232A900534440 /* WaypointViewInteractor.swift */; };
+		5AC20F8B28C232DA00534440 /* WaypointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC20F8A28C232DA00534440 /* WaypointView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		5AC20F7D28C212F800534440 /* TripListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListRouter.swift; sourceTree = "<group>"; };
 		5AC20F7F28C21AB200534440 /* TripMapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapViewPresenter.swift; sourceTree = "<group>"; };
 		5AC20F8128C21BFB00534440 /* TripMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapView.swift; sourceTree = "<group>"; };
+		5AC20F8328C2321900534440 /* TripDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailRouter.swift; sourceTree = "<group>"; };
+		5AC20F8628C2328700534440 /* WaypointViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewPresenter.swift; sourceTree = "<group>"; };
+		5AC20F8828C232A900534440 /* WaypointViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewInteractor.swift; sourceTree = "<group>"; };
+		5AC20F8A28C232DA00534440 /* WaypointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 		5A160A9328C10807001EA60B /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				5AC20F8528C2326900534440 /* WaypointModule */,
 				5AC20F7628C2115E00534440 /* TripDetailsModule */,
 				5A160A9228C107E6001EA60B /* TripListModule */,
 			);
@@ -168,8 +177,19 @@
 				5AC20F7D28C212F800534440 /* TripListRouter.swift */,
 				5AC20F7F28C21AB200534440 /* TripMapViewPresenter.swift */,
 				5AC20F8128C21BFB00534440 /* TripMapView.swift */,
+				5AC20F8328C2321900534440 /* TripDetailRouter.swift */,
 			);
 			path = TripDetailsModule;
+			sourceTree = "<group>";
+		};
+		5AC20F8528C2326900534440 /* WaypointModule */ = {
+			isa = PBXGroup;
+			children = (
+				5AC20F8628C2328700534440 /* WaypointViewPresenter.swift */,
+				5AC20F8828C232A900534440 /* WaypointViewInteractor.swift */,
+				5AC20F8A28C232DA00534440 /* WaypointView.swift */,
+			);
+			path = WaypointModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,13 +275,17 @@
 				5AC20F7E28C212F800534440 /* TripListRouter.swift in Sources */,
 				5A1F6D9928C0F8930052B569 /* Persistence.swift in Sources */,
 				5A1F6DA428C100670052B569 /* SplitImage.swift in Sources */,
+				5AC20F8728C2328700534440 /* WaypointViewPresenter.swift in Sources */,
 				5AC20F7C28C2121200534440 /* TripDetailView.swift in Sources */,
 				5A160A8F28C103D5001EA60B /* MapView.swift in Sources */,
+				5AC20F8928C232A900534440 /* WaypointViewInteractor.swift in Sources */,
 				5A160A9528C1084B001EA60B /* TripListInteractor.swift in Sources */,
 				5A1F6D8528C0F7AB0052B569 /* Viper_SwiftUIApp.swift in Sources */,
 				5AC20F8228C21BFB00534440 /* TripMapView.swift in Sources */,
+				5AC20F8B28C232DA00534440 /* WaypointView.swift in Sources */,
 				5AC20F7A28C211DD00534440 /* TripDetailPresenter.swift in Sources */,
 				5A1F6D9628C0F84D0052B569 /* DataModel.swift in Sources */,
+				5AC20F8428C2321900534440 /* TripDetailRouter.swift in Sources */,
 				5AC20F8028C21AB200534440 /* TripMapViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
