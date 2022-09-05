@@ -1,7 +1,7 @@
 # Viper-SwiftUI
 
 
-##About
+## About
 
 A simple application that implements a pure VIPER architectural pattern.
 
@@ -18,3 +18,14 @@ Each of the letters in VIPER stand for a component of the architecture: View, In
 - An Entity represents application data.
 - The Router handles navigation between screens. 
 
+<div align="center">
+ <img src="screenshots/viper.png" height="250" alt="Screenshot"/>
+</div>
+
+### Screenshots:
+
+<div align="center">
+ <img src="screenshots/new_trip1.png" height="350" alt="Screenshot"/>
+ <img src="screenshots/with_waypoints.png" height="350" alt="Screenshot"/>
+ <img src="screenshots/waypoint_editor.png" height="350" alt="Screenshot"/>
+</div>
